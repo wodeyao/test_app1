@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>f64f6008-8771-4724-900f-2e8c2fc039b5</PackageIdentityName>
     <PackageIdentityPublisher>CN=Administrator</PackageIdentityPublisher>
-    <IntermediateOutputPath>G:\Test\App1\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>G:\Test\test\App1\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>G:\Test\App1\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>G:\Test\test\App1\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>9B742C801C6662D3ADF103F55413F8B5291E00C2907CCE685D2BED4E12F6D260</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>f64f6008-8771-4724-900f-2e8c2fc039b5_1.0.0.0_x86__75cr2b68sm664</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>f64f6008-8771-4724-900f-2e8c2fc039b5_75cr2b68sm664!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="G:\Test\App1\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="G:\Test\test\App1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-10T09:23:24.016</Modified>
+      <Modified>2019-07-11T09:07:06.089</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="G:\Test\App1\bin\x86\Debug\App1.exe">
+    <AppxPackagedFile Include="G:\Test\test\App1\bin\x86\Debug\App1.exe">
       <PackagePath>entrypoint\App1.exe</PackagePath>
-      <Modified>2019-07-10T09:23:22.329</Modified>
+      <Modified>2019-07-11T09:07:05.853</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -498,67 +498,67 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2018-10-22T17:33:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\Test\App1\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="G:\Test\test\App1\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2019-07-10T07:17:10.212</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\Test\App1\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="G:\Test\test\App1\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2019-06-18T09:09:41.803</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\Test\App1\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="G:\Test\test\App1\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-06-18T09:09:41.803</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\Test\App1\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="G:\Test\test\App1\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-06-18T09:09:41.803</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\Test\App1\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="G:\Test\test\App1\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-06-18T09:09:41.803</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\Test\App1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="G:\Test\test\App1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-06-18T09:09:41.803</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\Test\App1\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="G:\Test\test\App1\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-06-18T09:09:41.803</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\Test\App1\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="G:\Test\test\App1\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-06-18T09:09:41.803</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\Test\App1\bin\x86\Debug\App1.xr.xml">
+    <AppxPackagedFile Include="G:\Test\test\App1\bin\x86\Debug\App1.xr.xml">
       <PackagePath>App1.xr.xml</PackagePath>
-      <Modified>2019-07-10T09:23:22.153</Modified>
+      <Modified>2019-07-11T09:07:05.741</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\Test\App1\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="G:\Test\test\App1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-07-10T09:23:22.169</Modified>
+      <Modified>2019-07-11T09:07:05.746</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\Test\App1\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="G:\Test\test\App1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-07-10T09:23:22.169</Modified>
+      <Modified>2019-07-11T09:07:05.746</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2018-10-22T16:44:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\Test\App1\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="G:\Test\test\App1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-07-10T09:23:23.037</Modified>
+      <Modified>2019-07-11T08:57:05.374</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="G:\Test\App1\bin\x86\Debug\Core\App1.exe">
+    <AppxPackagedFile Include="G:\Test\test\App1\bin\x86\Debug\Core\App1.exe">
       <PackagePath>App1.exe</PackagePath>
-      <Modified>2019-07-10T09:23:24.011</Modified>
+      <Modified>2019-07-11T09:07:06.087</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

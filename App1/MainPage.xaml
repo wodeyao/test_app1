@@ -10,12 +10,22 @@
     <Page.Resources>
         <ControlTemplate x:Key="EnemyTemplate" TargetType="ContentControl">
             <Grid>
-                <Ellipse Width="100" Height="104" Fill="Red"/>
+                <Ellipse Height="100" Width="75" Fill="Gray" Stroke="Black"/>
+                <Ellipse HorizontalAlignment="Center" Height="35" Margin="40,20,70,0" VerticalAlignment="Top" Width="25" Fill="Black" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse.RenderTransform>
+                        <CompositeTransform SkewX="10"/>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse HorizontalAlignment="Center" Height="35" Margin="70,20,40,0" VerticalAlignment="Top" Width="25" Fill="Black" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse.RenderTransform>
+                        <CompositeTransform SkewX="-10"/>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
             </Grid>
         </ControlTemplate>
     </Page.Resources>
 
-    <Grid Background="Black">
+    <Grid x:Name="grid" Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="160"/>
             <ColumnDefinition/>
@@ -31,12 +41,8 @@
             <TextBlock Text="Avoid These" TextWrapping="Wrap" FocusVisualPrimaryBrush="#FFF5F3F3" FocusVisualSecondaryBrush="#99F7F1F1" Foreground="White" SelectionHighlightColor="#FFEFF6FB" Style="{StaticResource SubheaderTextBlockStyle}" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <ContentControl Template="{StaticResource EnemyTemplate}" Content="ContentControl" Foreground="White" FocusVisualSecondaryBrush="#99FDFBFB" Background="White" FocusVisualPrimaryBrush="#FFFFEEEE" BorderBrush="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </StackPanel>
-        <ProgressBar Grid.Column="1" Grid.Row="2" FocusVisualPrimaryBrush="#FFFBF3F3" BorderBrush="White" FocusVisualSecondaryBrush="#99FFFBFB" Foreground="White" Background="#33FFFFFF" Height="20"/>
-        <StackPanel x:Name="human" Orientation="Vertical" d:IsHidden="True">
-            <Ellipse Fill="White" Height="10" Width="10"/>
-            <Rectangle Fill="White" Height="25" Width="10"/>
-        </StackPanel>
-        <Canvas x:Name="playArea" Grid.Row="1" HorizontalAlignment="Stretch" Grid.ColumnSpan="7">
+        <ProgressBar x:Name="progressBar" Grid.Column="1" Grid.Row="2" FocusVisualPrimaryBrush="#FFFBF3F3" BorderBrush="White" FocusVisualSecondaryBrush="#99FFFBFB" Foreground="White" Background="#33FFFFFF" Height="20"/>
+        <Canvas x:Name="playArea" Grid.Row="1" HorizontalAlignment="Stretch" Grid.ColumnSpan="7" PointerExited="PlayArea_PointerExited" PointerMoved="PlayArea_PointerMoved">
             <Canvas.FocusVisualSecondaryBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0.204"/>
@@ -51,7 +57,7 @@
                 </LinearGradientBrush>
             </Canvas.Background>
             <TextBlock x:Name="gameOverText" Canvas.Left="489" Canvas.Top="290" Text="Game Over" TextWrapping="Wrap" FontFamily="Arial Black" FontSize="100" FontStyle="Italic" FontWeight="Bold" Foreground="White"/>
-            <Rectangle x:Name="target" Height="50" Canvas.Left="887.5" Canvas.Top="236.5" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle x:Name="target" Height="50" Canvas.Left="887.5" Canvas.Top="236.5" Width="50" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PointerEntered="Target_PointerEntered">
                 <Rectangle.RenderTransform>
                     <CompositeTransform Rotation="45"/>
                 </Rectangle.RenderTransform>
@@ -68,6 +74,10 @@
                     </LinearGradientBrush>
                 </Rectangle.FocusVisualPrimaryBrush>
             </Rectangle>
+            <StackPanel x:Name="human" Orientation="Vertical" d:IsHidden="True" Height="140" Width="160" PointerPressed="Human_PointerPressed">
+                <Ellipse Fill="White" Height="10" Width="10"/>
+                <Rectangle Fill="White" Height="25" Width="10"/>
+            </StackPanel>
         </Canvas>
 
     </Grid>

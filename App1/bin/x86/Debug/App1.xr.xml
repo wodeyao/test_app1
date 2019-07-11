@@ -25,9 +25,19 @@
       <RootMethod Name="SetColumnSpan" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
-      <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
       <RootProperty Name="Fill" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
+      <RootProperty Name="SkewX" />
+      <RootProperty Name="Rotation" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
@@ -51,6 +61,9 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Children" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootEvent Name="PointerPressed" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
       <RootProperty Name="FocusVisualPrimaryBrush" />
@@ -65,6 +78,8 @@
       <RootProperty Name="FocusVisualSecondaryBrush" />
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
+      <RootEvent Name="PointerExited" />
+      <RootEvent Name="PointerMoved" />
       <RootMethod Name="GetLeft" />
       <RootMethod Name="SetLeft" />
       <RootMethod Name="GetTop" />
@@ -102,9 +117,7 @@
       <RootProperty Name="RenderTransform" />
       <RootProperty Name="Fill" />
       <RootProperty Name="FocusVisualPrimaryBrush" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
-      <RootProperty Name="Rotation" />
+      <RootEvent Name="PointerEntered" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
       <RootProperty Name="Template" />
