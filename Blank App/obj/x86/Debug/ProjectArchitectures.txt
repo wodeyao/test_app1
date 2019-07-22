@@ -1,0 +1,1 @@
+G:\Test\Blank App\Blank App.csproj;x86
